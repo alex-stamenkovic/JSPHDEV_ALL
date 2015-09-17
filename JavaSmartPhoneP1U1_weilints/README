@@ -1,0 +1,45 @@
+Class: Java smartphone
+Project 1 Unit 1: Automotive modeling
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+Contents:
+    README: This file 
+
+    UML Files 
+        UML/Driver.jpg
+        UML/Model.jpg
+        UML/Util.jpg
+    
+    Source Files 
+        src/javasmartphone/p1u1/driver/Driver.java   <= Where the main method existed 
+        src/javasmartphone/p1u1/model/Automotive.java
+        src/javasmartphone/p1u1/model/OptionSet.java
+        src/javasmartphone/p1u1/util/FileParser.java
+    
+    Unit Test Code 
+        test/javasmartphone/p1u1/model/AutomotiveTest.java
+
+    Test Code 
+        testData/FordZTW.print_out
+        testData/FordZTW.ser_out
+        testData/FordZTW.txt
+
+Important Node:
+    Test:
+        1. To test the functionality, the Driver class will read file from FordZTW.txt
+           do the serilization output to FordZTW.ser_out and the do the de-serilization
+           and print the message to see if the content is matached. FordZTW.print_out
+           is the print result
+        2. We also have unit test 
+    Format of input file:
+        1. Any line begin with "//" is comment. Will be skipped.
+        2. The first valid line is model name and base price, separated by "," and no 
+           additional spaces in between.
+        3. The following line is an optionSet. Because it may contains multiple sets, this 
+           maybe a lone line. Again, each item is separated by "," and no space is allowed.
+           The first item is the name, e.g. "Color", following with "name,price" pairs.

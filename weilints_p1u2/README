@@ -1,0 +1,79 @@
+Class: Java smartphone
+Project 1 Unit 2:
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+Note:
+    1. We have five exceptions. But only implement fix function. 
+       This exception is for missing filename, the fix method is
+       to set filename as default file name 
+    2. Test by two ways:
+       a. Unit test 
+       b. Drivers 
+    Format of input file:
+        1. Any line begin with "//" is comment. Will be skipped.
+        2. The first valid line is make, model and base price, separated by "," and no 
+           additional spaces in between.
+        3. The following line is an optionSet. Because it may contains multiple sets, this 
+           maybe a lone line. Again, each item is separated by "," and no space is allowed.
+           The first item is the name, e.g. "Color", following with "name,price" pairs.
+--
+File Contents: 
+    README   -> This file 
+    UML
+        UML/JavaSmartPhoneP1U2UML.jpg
+    
+    Logging example 
+        loggingData/AutoLog.txt
+
+    Soucre File 
+        src/javasmartphone/p1u2/adapter/BuildAuto.java
+        src/javasmartphone/p1u2/adapter/ICreateAuto.java
+        src/javasmartphone/p1u2/adapter/IFixAuto.java
+        src/javasmartphone/p1u2/adapter/IUpdateAuto.java
+        src/javasmartphone/p1u2/adapter/ProxyAutomobile.java
+        src/javasmartphone/p1u2/driver/Driver.java
+            -> Basic form, build auto and selection option then print out 
+        src/javasmartphone/p1u2/driver/DriverMissingBasePrice.java
+            -> Test is base price is missing
+        src/javasmartphone/p1u2/driver/DriverMissingFileName.java
+            -> Test if file name is missing
+        src/javasmartphone/p1u2/driver/DriverMissingOption.java
+            -> Test if Option is missing
+        src/javasmartphone/p1u2/driver/DriverMissingOptionSet.java
+            -> Test if OptionSet is missing
+        src/javasmartphone/p1u2/driver/DriverNegativeBasePrice.java
+            -> Test if base price is negative
+        src/javasmartphone/p1u2/driver/ProxyDriver.java
+            -> Test ProxyAutomobile's behavior
+        src/javasmartphone/p1u2/exception/AutoException.java
+        src/javasmartphone/p1u2/exception/AutoExceptionFix1to100.java
+        src/javasmartphone/p1u2/exception/EnumAutoErrorCode.java
+        src/javasmartphone/p1u2/model/Automobile.java
+        src/javasmartphone/p1u2/model/OptionSet.java
+        src/javasmartphone/p1u2/util/FileParser.java
+
+    Unit test     
+        test/javasmartphone/p1u2/model/AutomobileTest.java
+    
+    testData : output 
+        testData/DriverMissingBasePriceOutput
+        testData/DriverMissingFileNameOutput
+        testData/DriverMissingOptionOutput
+        testData/DriverMissingOptionSetOutput
+        testData/DriverNegativeBasePriceOutput
+        testData/DriverOutput
+        testData/ProxyDriverOutput
+        testData/test_output.txt      -> All cat result
+
+    testData : input 
+        testData/FordZTW.txt
+        testData/FordZTW_MissingOption.txt
+        testData/FordZTW_MissingOptionSet.txt
+        testData/FordZTW_MissingPrice.txt
+        testData/FordZTW_NegativePrice.txt
+        testData/HondaCivic.txt

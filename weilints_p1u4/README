@@ -1,0 +1,77 @@
+Class: Java smartphone
+Project 1 Unit 4: Client/Server 
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+    There are two driver, one for client side, one for server side 
+    client side:
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/AutoSocketClient.java
+    server side:
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/AutoSocketServer.java
+
+    The functionality just align writeup. Please refer to the comments in each 
+    file for details. Here only list some critical design motivation:
+    1. Server side:
+       Keep listening new request, whenever a request is accpeted. Create a new 
+       thread of ServerSideDefaultSocketClient to handle it.
+    2. Client side: 
+       Can do either 1. Add/Upload new auto 2. Configure an auto. 
+       Each time we create a new thread to do it.
+--
+    File content:
+
+    README
+        -> This file
+    Client side:
+        // Note, old parts are skipped 
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/AutoSocketClient.java
+            -> driver for client side 
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/CAR_MODEL_COMMAND_OPTION.java
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/CarModelOptionsIO.java
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/ClientSideDefaultSocketClient.java
+            -> Key class of this unit, modified from DefaultSocketClient
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/ISocketClient.java
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/ISocketClientConstants.java
+        JavaSmartPhoneP1U4Client/src/javasmartphone/p1u4/client/SelectCarOption.java        
+        
+        Test 
+        JavaSmartPhoneP1U4Client/test/javasmartphone/p1u4/model/AutomobileTest.java
+        JavaSmartPhoneP1U4Client/test/javasmartphone/p1u4/util/FileParserTest.java
+        
+        Test data
+        JavaSmartPhoneP1U4Client/testData/Civic.properties
+        JavaSmartPhoneP1U4Client/testData/FordZTW.txt
+        JavaSmartPhoneP1U4Client/testData/Prius.properties
+        JavaSmartPhoneP1U4Client/testData/test_output.txt
+            -> The result from server side. Add two automibile to server and select one 
+               to customize 
+        UML
+        JavaSmartPhoneP1U4Client/UML/JavaSmartPhoneP1U4_Client.jpg
+
+    Server side:
+        // Note, old parts are skppied 
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/AutoSocketServer.java
+            -> Driver for server side 
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/BuildCarModelOptions.java
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/IAutoServer.java
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/ISocketClient.java
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/ISocketClientConstants.java
+        JavaSmartPhoneP1U4Server/src/javasmartphone/p1u4/server/ServerSideDefaultSocketClient.java
+            -> Key class of this unit, modified from DefaultSocketClient
+
+        Test 
+        JavaSmartPhoneP1U4Server/test/javasmartphone/p1u4/model/AutomobileTest.java
+        JavaSmartPhoneP1U4Server/test/javasmartphone/p1u4/util/FileParserTest.java
+
+        Test Data
+        JavaSmartPhoneP1U4Server/testData/Prius.properties
+        JavaSmartPhoneP1U4Server/testData/test_output.txt
+            -> The log data for server side
+
+        UML
+        JavaSmartPhoneP1U4Server/UML/JavaSmartPhoneP1U4_Server.jpg

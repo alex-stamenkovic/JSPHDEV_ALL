@@ -1,0 +1,41 @@
+Class: Java smartphone
+Home work2: students score calculation
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+Contents:
+    README: This file 
+    
+    UML Files 
+        UML/exceptions.jpg
+        UML/FileParser.jpg
+        UML/models.jpg
+
+    Source codes
+        src/javasmartphone/hw2/exception/InValidStudentInputException.java
+        src/javasmartphone/hw2/exception/MoreThan40StudentException.java
+        src/javasmartphone/hw2/model/AbstractExamTaker.java
+        src/javasmartphone/hw2/model/IStatistics.java
+        src/javasmartphone/hw2/model/Statistics.java
+        src/javasmartphone/hw2/model/Student.java
+        src/javasmartphone/hw2/util/FileParser.java
+        src/javasmartphone/hw2/Hw2Main.java         <-- The main function 
+
+    Unit test codes
+        test/javasmartphone/hw2/model/StatisticsTest.java
+        test/javasmartphone/hw2/model/StudentTest.java
+        test/javasmartphone/hw2/util/FileParserTest.java
+
+    test data: for main function to read or for unit test class to open
+        testData/40StudentsInput
+        testData/41StudentsInput
+        testData/InvalidScore
+        testData/InvalidStudentID
+        testData/SampleInputFromWriteUp
+        testData/SuperSmallInput
+        testData/*output   ----> those expected result
+

@@ -1,0 +1,175 @@
+AutoException [errorCode=1, errorMsg=Missing base price for Automobile in Text file]
+
+    at javasmartphone.p1u2.util.FileParser.parseModel(FileParser.java:91)
+    at javasmartphone.p1u2.util.FileParser.openFile(FileParser.java:58)
+    at javasmartphone.p1u2.util.FileParser.buildAutoObject(FileParser.java:29)
+    at javasmartphone.p1u2.driver.DriverMissingBasePrice.main(DriverMissingBasePrice.java:17)
+Print Parsed model
+
+Ford,Wagon ZTW,0.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:0
+Catch exceptionAutoException [errorCode=4, errorMsg=Missing filename or wrong filename]
+Reset filename and reopen again ...
+Print parsed model
+
+Ford,Wagon ZTW,30000.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000
+
+AutoException [errorCode=3, errorMsg=Missing option data]
+
+    at javasmartphone.p1u2.util.FileParser.parseOptions(FileParser.java:118)
+    at javasmartphone.p1u2.util.FileParser.openFile(FileParser.java:61)
+    at javasmartphone.p1u2.util.FileParser.buildAutoObject(FileParser.java:29)
+    at javasmartphone.p1u2.driver.DriverMissingOption.main(DriverMissingOption.java:18)
+Print Parsed model
+
+Ford,Wagon ZTW,9900.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:9900
+AutoException [errorCode=2, errorMsg=Missing OptionSet data (or part of it)]
+
+    at javasmartphone.p1u2.util.FileParser.openFile(FileParser.java:71)
+    at javasmartphone.p1u2.util.FileParser.buildAutoObject(FileParser.java:29)
+    at javasmartphone.p1u2.driver.DriverMissingOptionSet.main(DriverMissingOptionSet.java:18)
+Print Parsed model
+
+Ford,Wagon ZTW,9900.0
+-- > Option choice: // NULL means not select any one
+Total Price:9900
+AutoException [errorCode=5, errorMsg=Having negative base price]
+
+Will converted to positive number automatically
+Print Parsed model
+
+Ford,Wagon ZTW,9900.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:9900
+Before Selcetion: Price 30000
+
+Ford,Wagon ZTW,30000.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000
+After Selcetion: Price 29585
+
+Ford,Wagon ZTW,30000.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color: Gold Clearcoat Metallic
+Transmission: standard
+Brakes/Traction Control: ABS
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:29585
+Ford,Wagon ZTW,30000.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000
+
+--> Build Civic
+
+Honda,Civic,17867.0
+Color,Alabaster Silver Metallic,0.0,Crimson Pearl,0.0,Crystal Black Pearl,0.0,Dyno Blue Pearl,0.0,Modern Steel Metallic,0.0,Taffeta White,0.0,Urban Titanium Metallic,0.0
+Transmission,automatic,0.0,standard,-700.0
+Brakes/Traction Control,standard,0.0,FID,100.0
+Seat Cover,none,0.0,selected,300.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Seat Cover:NULL
+Total Price:17867
+
+--> [Wagon ZTW] Change the option set name fron Color to NewColor
+
+Ford,Wagon ZTW,30000.0
+NewColor,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+NewColor:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000
+
+--> [Wagon ZTW] Update price of Power Moonroof from 595.0 to 300.0
+
+Ford,Wagon ZTW,30000.0
+NewColor,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,300.0
+-- > Option choice: // NULL means not select any one
+NewColor:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000

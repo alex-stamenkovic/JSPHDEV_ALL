@@ -1,0 +1,32 @@
+The result is cut from Android Studio log it shows that:
+
+    1. At first time, the data is not calculated before so we 
+       can not find result from DB. Hence, it do the calculation
+       and then insert to the DB.
+    2. At the second time, the app can get the result from DB because  
+       we use the same input
+—-
+First time: 
+
+03-31 23:12:53.090    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ Database created
+03-31 23:12:53.126    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ Table created
+03-31 23:12:53.133    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ Table created
+03-31 23:12:53.134    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ getPayoffDate done
+03-31 23:12:53.134    2468-2468/com.example.moumoutsay.mortgage.app D/PayoffDate﹕ No existing payoffDate from DB
+03-31 23:12:53.137    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ addPayoffDate done
+03-31 23:12:53.137    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ getPayment done
+03-31 23:12:53.137    2468-2468/com.example.moumoutsay.mortgage.app D/Payment﹕ No existing Payment from DB
+03-31 23:12:53.138    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ Table created
+03-31 23:12:53.145    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ addPayment done
+03-31 23:12:53.147    2468-2468/com.example.moumoutsay.mortgage.app I/Click Calculation﹕ Calculation Done here
+
+—-
+Second time: 
+03-31 23:19:44.321    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ Database created
+03-31 23:19:44.324    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ Table created
+03-31 23:19:44.324    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ getPayoffDate done
+03-31 23:19:44.324    2468-2468/com.example.moumoutsay.mortgage.app D/PayoffDate﹕ Get payoffDate from DBOct, 2040
+03-31 23:19:44.325    2468-2468/com.example.moumoutsay.mortgage.app D/DBUtil﹕ getPayment done
+03-31 23:19:44.325    2468-2468/com.example.moumoutsay.mortgage.app D/Payment﹕ Get monthly payment from DB 1185.696
+03-31 23:19:44.325    2468-2468/com.example.moumoutsay.mortgage.app D/Payment﹕ Get total payment from DB 426850.738
+03-31 23:19:44.325    2468-2468/com.example.moumoutsay.mortgage.app I/Click Calculation﹕ Calculation Done here

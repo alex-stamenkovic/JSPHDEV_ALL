@@ -1,0 +1,11 @@
+// begin with comment
+// note, comment should start with //, it's not allowed to put any space infront //
+// Format should be like following 
+// Ford, Focus Wagon ZTW, 30000 <= make/ model name,base price 
+Ford,Wagon ZTW,30000.0
+// First One is option set name, following with "name,price" pairs 
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0

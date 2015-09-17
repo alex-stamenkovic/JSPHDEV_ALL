@@ -1,0 +1,41 @@
+Class: Java smartphone Mini 2 
+Assignment 2: Mortgage App
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is developmented by latest Android Studio. Please 
+    use it to load it. 
+
+Note:
+    Flow:
+    1. Get data when button is clicked.
+    2. Query DB to see if existing record (See testdata/test_output.txt)
+    3. Do calculation if there's no previous record. And then insert to DB
+    4. Display the result in GUI
+
+    PMI & ZIP code:
+       We do not use these two field during calculation to simply the flow.
+
+    Invalid Input:
+       Will display error msg and do nothing. User can retype the input
+       to get result again. Please see testdata/GUI_blank_input_result.png 
+
+    Content in Mortgage/app/build is removed to reduce zip file.
+
+Contents:
+    README: This file
+    
+    Source code:
+        Util: DB operation
+        Mortgage/app/src/main/java/com/example/moumoutsay/mortgage/com/example/moumoutsay/mortgage/util/DBUtil.java
+        Mortgage/app/src/main/java/com/example/moumoutsay/mortgage/com/example/moumoutsay/mortgage/util/SQLCmd.java
+        Model: Mortgate calculation
+        Mortgage/app/src/main/java/com/example/moumoutsay/mortgage/model/MortgageCal.java
+        UI: Main activity
+        Mortgage/app/src/main/java/com/example/moumoutsay/mortgage/ui/MainActivity.java
+
+    Result 
+        testdata/GUI_result.png  // the GUI 
+        testdata/test_output.txt // shows the DB operation
+        testdata/GUI_blank_input_result.png

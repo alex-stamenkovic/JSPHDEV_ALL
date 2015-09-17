@@ -1,0 +1,31 @@
+Class: Java smartphone
+Home work1: creating objects 
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+Contents:
+    README: this file 
+
+    UML/PartA.gif  -> class diagram for part A, including unit test class
+    UML/PartB.gif  -> class diagram for part B, including unit test class
+
+    -- source code for part A
+    src/javasmartphone/cointoss/Coin.java
+    src/javasmartphone/cointoss/CoinToss.java
+    src/javasmartphone/cointoss/Simulation.java
+    
+    -- source code for part B
+    src/javasmartphone/parking/ticket/simulator/ParkedCar.java
+    src/javasmartphone/parking/ticket/simulator/ParkingMeter.java
+    src/javasmartphone/parking/ticket/simulator/ParkingTicket.java
+    src/javasmartphone/parking/ticket/simulator/PoliceOfficer.java
+
+    -- test code for part A
+    test/javasmartphone/cointoss/CoinTest.java
+    
+    -- test code for part B
+    test/javasmartphone/parking/ticket/simulator/PoliceOfficerTest.java

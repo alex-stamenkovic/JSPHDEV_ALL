@@ -1,0 +1,3 @@
+// This is error case: missing optionSets 
+// Ford, Focus Wagon ZTW, 30000 
+Ford,Wagon ZTW, 9900.0

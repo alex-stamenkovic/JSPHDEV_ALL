@@ -1,0 +1,85 @@
+Class: Java smartphone
+Project 1 Unit 6: Add data base part 
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+SystemInfo:
+    1. Use MySQL 
+    2. Use mysql-connector-java-5.1.33-bin.jar
+
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+Old part from U5: 
+    This Unit is mainly for server part. However, but it can still 
+    run web-client 
+
+    There are two driver, one for client side, one for server side 
+    client side:
+        JavaSmartPhoneP1U6Client/src/javasmartphone/p1u6/client/AutoSocketClient.java
+    server side:
+        JavaSmartPhoneP1U6Server/src/javasmartphone/p1u6/server/AutoSocketServer.java
+
+    Also, to web interface entry is (assume the TOMCAT is running on port 8080) 
+    http://localhost:8080/JavaSmartPhoneP1U6Client/ListModels
+
+    The functionality just align writeup. Please refer to the comments in each 
+    file for details. Here only list some critical design motivation:
+    
+    The flow: 
+    1. User use browser to acccess ListModels page, it will send GET request 
+       to ListModels.java
+    2. The ListModels.java will use doGet to handle the request. That is to say,
+       communicate with server to list all automibile for uer selection.
+    3. When user make a selection, it will send a GET resquest to ConfigureModel.java
+    4. The ConfigureModel.java will communicate with sever to get automobile object 
+    5. Then ConfigureModel.java will provide a form for user selection
+    6. After selection, the ConfigureModel.java will send a POST request to itselt 
+    7. In the doPost() method of ConfigureModel, it will make a configuration and 
+       then send the object to ViewConfiguration.jsp to show. 
+
+!!  To see the run-time result, please refer to for each step
+    JavaSmartPhoneP1U6Client/testData/FinalResult.png
+    JavaSmartPhoneP1U6Client/testData/ListAuto.png
+    JavaSmartPhoneP1U6Client/testData/SelectAuto.png
+
+New Part for U6:
+    Key driver: 
+    JavaSmartPhoneP1U6Server/bin/javasmartphone/p1u6/driver/DBDriver.class
+    1. Use DBUtil to setup connetion and create schema/table
+    2. Use BuildAuto to buildAuto (will call dbBuildAuto) 
+    3. List auto names to see if auto is in DB
+    4. Delete Auto
+    5. List auto names to see if auto is removed from DB
+    6. BuildAuto again to ensure it can insert again 
+    7. Call update functions and print out to see if the auto is update 
+    
+    The result is: 
+    JavaSmartPhoneP1U6Server/testData/test_output.txt   
+    
+    The schema is 
+    JavaSmartPhoneP1U6Server/testData/table_schema.png
+    model
+        model_id   <- Primary Key
+        model_name
+        make 
+        base_price 
+    option_set 
+        option_set_id <- Primary Key
+        model_id <- Foreign Key
+        set_name
+    opt
+        opt_id         <- Primary Key
+        option_set_id  <- Foreign Key
+        opt_name
+        price 
+
+    We can use properties file to change the SQL cmd and the setting in:
+    JavaSmartPhoneP1U6Server/db/db.properties
+
+    The SQL cmd to create table is in 
+    JavaSmartPhoneP1U6Server/SQLCmd/*.sql
+
+    UML
+    JavaSmartPhoneP1U6Server/UML/JavaSmartPhoneP1U6_Server.jpg
+

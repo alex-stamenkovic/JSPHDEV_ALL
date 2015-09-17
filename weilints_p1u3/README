@@ -1,0 +1,76 @@
+Class: Java smartphone
+Project 1 Unit 3: Add code to ensure thread safety
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+    We use src/javasmartphone/p1u3/driver/Driver.java to test our code.
+    The idea is as following:
+    
+        We have two threads: t1 and t2. 
+        t1 try to modify the optionSet name from Color to T1Color while
+        t2 try to modify the optionSet name from T1Color to T2Color 
+        Then we start t1 following with t2. Because the the code 
+        in run() method is synchronized so we know that 
+        t1 will change the color first. As a result, t2 can find T1Color 
+        and change it to T2Color. This is what we expected. 
+        
+        However, if we remove the synchronization line, the result may be 
+        unpredictable. To let the error case be triggered more easily, 
+        I put a random sleep code in the run() method. Therefore, if 
+        the critical codes were not protected. t2 can execute before 
+        t1 by chance. In this case, the optionSet name is still Color 
+        so t2 can not update the name to T2Color. This is a case to 
+        demonstrate the data corruption without synchronization      
+        The result is stored in ./testData/DriverOutoutWithoutSync and
+        ./testData/DriverOutputWithSync  
+
+
+-- 
+File Contents: 
+    README -> This file
+    UML
+        UML/JavaSmartPhoneP1U3.jpg
+
+    Logging example 
+        loggingData/AutoLog.txt
+    
+    Source code
+        src/javasmartphone/p1u3/adapter/BuildAuto.java
+        src/javasmartphone/p1u3/adapter/ICreateAuto.java
+        src/javasmartphone/p1u3/adapter/IFixAuto.java
+        src/javasmartphone/p1u3/adapter/ISyncUpdateAuto.java
+            => new 
+        src/javasmartphone/p1u3/adapter/IUpdateAuto.java
+        src/javasmartphone/p1u3/adapter/ProxyAutomobile.java
+            => modified
+        
+        src/javasmartphone/p1u3/driver/Driver.java
+            => To test code 
+
+        src/javasmartphone/p1u3/exception/AutoException.java
+        src/javasmartphone/p1u3/exception/AutoExceptionFix1to100.java
+        src/javasmartphone/p1u3/exception/EnumAutoErrorCode.java
+        
+        src/javasmartphone/p1u3/model/Automobile.java
+            => modified 
+        src/javasmartphone/p1u3/model/OptionSet.java
+        
+        src/javasmartphone/p1u3/scale/EditOptions.java
+        
+        src/javasmartphone/p1u3/util/FileParser.java
+
+    Unit test (Not modified in this Unit)
+        test/javasmartphone/p1u3/model/AutomobileTest.java
+    
+    Test data/result for driver 
+        testData/DriverOutputWithoutSync
+        testData/DriverOutputWithSync
+        testData/FordZTW.txt
+            => input 
+        testData/test_output.txt
+            => output combined with testData/DriverOutputWithoutSync 
+               and testData/DriverOutputWithSync

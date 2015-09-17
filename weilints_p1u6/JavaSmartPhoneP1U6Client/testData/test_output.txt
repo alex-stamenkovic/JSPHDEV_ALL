@@ -1,0 +1,53 @@
+
+Please type mode: 
+1. Add new model
+2. Configure an model
+3. Exit
+1
+Please properties file name: 
+./testData/Civic.properties
+Ready for sending properties{OptionSet1_Option2=Automatic, OptionSet1_Option1=Manual, OptionSet2_Option1_Price=0, OptionSet1_Option2_Price=0, OptionSet2=Brakes, OptionSet1=Transmission, OptionSet2_Option2=ABS, OptionSet2_Option1=Regular, OptionSet2_Option2_Price=400, CarMake=Honda, OptionSet1_Option1_Price=-700, BasePrice=19000, CarModel=Civic}
+Model build successfully Civic
+
+Please type mode: 
+1. Add new model
+2. Configure an model
+3. Exit
+2
+Available models:
+    Civic
+    Prius
+Please type model
+Civic
+Select model: Civic
+Get autoHonda,Civic,19000.0
+Transmission,Manual,-700.0,Automatic,0.0
+Brakes,Regular,0.0,ABS,400.0
+-- > Option choice: // NULL means not select any one
+Transmission:NULL
+Brakes:NULL
+Total Price:19000
+
+Type 1 to cofigure. Type 2 to print result and exit
+1
+Type OptionSet to confgiure
+Transmission
+Type OptionChoice to confgiure
+Manual
+Set Transmission to Manual
+Type 1 to cofigure. Type 2 to print result and exit
+2
+Final ResultHonda,Civic,19000.0
+Transmission,Manual,-700.0,Automatic,0.0
+Brakes,Regular,0.0,ABS,400.0
+-- > Option choice: // NULL means not select any one
+Transmission: Manual
+Brakes:NULL
+Total Price:18300
+
+
+Please type mode: 
+1. Add new model
+2. Configure an model
+3. Exit
+3

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="javasmartphone.hw2.exception.InValidStudentInputException" 
+    project="JavaSmartPhoneHw2" 
+    file="/JavaSmartPhoneHw2/src/javasmartphone/hw2/exception/InValidStudentInputException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="152" width="384" x="62" y="155"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="javasmartphone.hw2.exception.MoreThan40StudentException" 
+    project="JavaSmartPhoneHw2" 
+    file="/JavaSmartPhoneHw2/src/javasmartphone/hw2/exception/MoreThan40StudentException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="152" width="389" x="486" y="155"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

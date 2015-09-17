@@ -1,0 +1,24 @@
+AutoSocket Server is binding on port4444
+Handling session with localHost:4444
+Ready to receive property
+Receive Civic
+Handling session with localHost:4444
+Ready to list models
+sent list modelsCivic
+End of list models
+Handling session with localHost:4444
+Ready to receive property
+Receive Prius
+Handling session with localHost:4444
+Ready to list models
+sent list modelsCivic
+sent list modelsPrius
+End of list models
+Handling session with localHost:4444
+Ready to receive property
+Receive Civic
+Handling session with localHost:4444
+Ready to list models
+sent list modelsCivic
+sent list modelsPrius
+End of list models

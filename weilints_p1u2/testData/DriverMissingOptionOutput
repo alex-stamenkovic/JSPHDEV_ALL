@@ -1,0 +1,19 @@
+AutoException [errorCode=3, errorMsg=Missing option data]
+
+    at javasmartphone.p1u2.util.FileParser.parseOptions(FileParser.java:118)
+    at javasmartphone.p1u2.util.FileParser.openFile(FileParser.java:61)
+    at javasmartphone.p1u2.util.FileParser.buildAutoObject(FileParser.java:29)
+    at javasmartphone.p1u2.driver.DriverMissingOption.main(DriverMissingOption.java:18)
+Print Parsed model
+
+Ford,Wagon ZTW,9900.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:9900

@@ -1,0 +1,38 @@
+Build Wagon ZTW ...
+Print before Update ...
+Ford,Wagon ZTW,30000.0
+Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000
+
+[Try Update]
+-->Try to update from old name: T1Color To new name: T2Color
+Update done
+
+[Try Update]
+-->Try to update from old name: Color To new name: T1Color
+Update done
+
+Print after Update ...
+Ford,Wagon ZTW,30000.0
+T1Color,Gold Clearcoat Metallic,0.0,Liquid Grey Clearcoat Metallic,0.0,Infra-Red Clearcoat,0.0,Grabber Green Clearcoat Metallic,0.0,Sangria Red Clearcoat Metallic,0.0,French Blue Clearcoat Metallic,0.0,Twilight Blue Clearcoat Metallic,0.0,CD Silver Clearcoat Metallic,0.0,Pitch Black Clearcoat,0.0,Cloud 9 White Clearcoat,0.0
+Transmission,automatic,0.0,standard,-815.0
+Brakes/Traction Control,standard,0.0,ABS,400.0,ABS with Advance Trac,1625.0
+Side Impact Air Bags,none,0.0,selected,350.0
+Power Moonroof,none,0.0,selected,595.0
+-- > Option choice: // NULL means not select any one
+T1Color:NULL
+Transmission:NULL
+Brakes/Traction Control:NULL
+Side Impact Air Bags:NULL
+Power Moonroof:NULL
+Total Price:30000

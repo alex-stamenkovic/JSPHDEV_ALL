@@ -1,0 +1,74 @@
+Class: Java smartphone
+Project 1 Unit 5: Create web interface for user configure automobile
+Author: Wei-Lin Tsai weilints@andrew.cmu.edu
+AndrewID: weilints
+
+Info: 
+    This is a eclipse workspace directory. Please use eclipse to 
+    load it.
+
+    This Unit is mainly for client part. However, I changed the 
+    package name from p1u4 to p1u5 so the server part is updated 
+    as well. As a result, I provide both server part and client 
+    part for TA to run. 
+
+    There are two driver, one for client side, one for server side 
+    client side:
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/client/AutoSocketClient.java
+    server side:
+        JavaSmartPhoneP1U5Server/src/javasmartphone/p1u5/server/AutoSocketServer.java
+
+    Also, to web interface entry is (assume the TOMCAT is running on port 8080) 
+    http://localhost:8080/JavaSmartPhoneP1U5Client/ListModels
+
+    The functionality just align writeup. Please refer to the comments in each 
+    file for details. Here only list some critical design motivation:
+    
+    The flow: 
+    1. User use browser to acccess ListModels page, it will send GET request 
+       to ListModels.java
+    2. The ListModels.java will use doGet to handle the request. That is to say,
+       communicate with server to list all automibile for uer selection.
+    3. When user make a selection, it will send a GET resquest to ConfigureModel.java
+    4. The ConfigureModel.java will communicate with sever to get automobile object 
+    5. Then ConfigureModel.java will provide a form for user selection
+    6. After selection, the ConfigureModel.java will send a POST request to itselt 
+    7. In the doPost() method of ConfigureModel, it will make a configuration and 
+       then send the object to ViewConfiguration.jsp to show. 
+
+!!  To see the run-time result, please refer to for each step
+    JavaSmartPhoneP1U5Client/testData/FinalResult.png
+    JavaSmartPhoneP1U5Client/testData/ListAuto.png
+    JavaSmartPhoneP1U5Client/testData/SelectAuto.png
+
+--
+    File content:
+
+    README
+        -> This file
+    Client side:
+    Source code: only list important part
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/client/AutoSocketClient.java
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/client/ClientSideDefaultSocketClient.java
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/client/SelectCarOption.java
+        // here are servlets
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/servlet/ConfigureModel.java
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/servlet/IServletConstants.java
+        JavaSmartPhoneP1U5Client/src/javasmartphone/p1u5/servlet/ListModels.java
+
+    Test Data: we have three models
+        JavaSmartPhoneP1U5Client/testData/Civic.properties
+        JavaSmartPhoneP1U5Client/testData/FinalResult.png
+        JavaSmartPhoneP1U5Client/testData/FordZTW.properties
+        JavaSmartPhoneP1U5Client/testData/FordZTW.txt
+        JavaSmartPhoneP1U5Client/testData/ListAuto.png
+        JavaSmartPhoneP1U5Client/testData/Prius.properties
+        JavaSmartPhoneP1U5Client/testData/SelectAuto.png
+        JavaSmartPhoneP1U5Client/testData/test_output.txt
+
+    UML
+        JavaSmartPhoneP1U5Client/UML/JavaSmartPhoneP1U5_Client.jpg
+
+    Web part
+        JavaSmartPhoneP1U5Client/WebContent/ViewConfiguration.jsp
+

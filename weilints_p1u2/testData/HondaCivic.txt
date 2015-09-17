@@ -1,0 +1,5 @@
+Honda,Civic,17867.0
+Color,Alabaster Silver Metallic,0.0,Crimson Pearl,0.0,Crystal Black Pearl,0.0,Dyno Blue Pearl,0.0,Modern Steel Metallic,0.0,Taffeta White,0.0,Urban Titanium Metallic,0.0
+Transmission,automatic,0.0,standard,-700.0
+Brakes/Traction Control,standard,0.0,FID,100.0
+Seat Cover,none,0.0,selected,300.0

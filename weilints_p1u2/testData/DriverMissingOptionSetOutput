@@ -1,0 +1,10 @@
+AutoException [errorCode=2, errorMsg=Missing OptionSet data (or part of it)]
+
+    at javasmartphone.p1u2.util.FileParser.openFile(FileParser.java:71)
+    at javasmartphone.p1u2.util.FileParser.buildAutoObject(FileParser.java:29)
+    at javasmartphone.p1u2.driver.DriverMissingOptionSet.main(DriverMissingOptionSet.java:18)
+Print Parsed model
+
+Ford,Wagon ZTW,9900.0
+-- > Option choice: // NULL means not select any one
+Total Price:9900
